@@ -1,16 +1,5 @@
 import React from "react";
-import {
-  Flex,
-  Image,
-  Text,
-  VStack,
-  Input,
-  InputGroup,
-  HStack,
-  InputLeftElement,
-  Icon,
-  Button,
-} from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 
 import { UserInfoPost } from "./UserInfoPost";
 import { PostInfo } from "./PostInfo";
