@@ -13,7 +13,7 @@ interface NavigationProps {}
 export const Navigation: React.FC<NavigationProps> = ({}) => {
   return (
     <Box w="100%" bg="#FFFFFF" borderBottom="1px solid #DBDBDB">
-      <Box mx={["10px", "25%"]}>
+      <Box mx={{ base: "5%", lg: "20%" }}>
         <Flex
           alignItems="center"
           justifyContent="space-between"
@@ -22,7 +22,7 @@ export const Navigation: React.FC<NavigationProps> = ({}) => {
         >
           <Icon
             as={AiOutlineCamera}
-            display={["flex", "none"]}
+            display={["flex", "flex", "none"]}
             fontSize="1.6rem"
           />
           <Link href="./">
@@ -32,32 +32,32 @@ export const Navigation: React.FC<NavigationProps> = ({}) => {
             w="10rem"
             bg="#FAFAFA"
             border="1px solid #DBDBDB"
-            placeholder="Search"
-            display={["none", "flex"]}
+            placeholder="🔍  Search"
+            display={["none", "none", "flex"]}
           />
 
           <Flex alignItems="center" justifyContent="flex-end">
             <Icon
               as={BsHouseDoor}
-              display={["none", "flex"]}
+              display={["none", "none", "flex"]}
               fontSize="1.6rem"
               marginRight="1.5rem"
             />
             <Icon
               as={AiOutlineMessage}
-              display={["none", "flex"]}
+              display={["none", "none", "flex"]}
               fontSize="1.6rem"
               marginRight="1.5rem"
             />
             <Icon
               as={BiNavigation}
-              display={["none", "flex"]}
+              display={["none", "none", "flex"]}
               fontSize="1.6rem"
               marginRight="1.5rem"
             />
             <Icon
               as={AiOutlineHeart}
-              display={["none", "flex"]}
+              display={["none", "none", "flex"]}
               fontSize="1.6rem"
               marginRight="1.5rem"
             />
