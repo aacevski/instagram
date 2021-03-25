@@ -14,6 +14,7 @@ export const Content: React.FC<ContentProps> = ({}) => {
       gap={4}
       mx={{ base: "5%", lg: "20%" }}
       pt={4}
+      mb={20}
     >
       <GridItem
         colSpan={{ base: 3, lg: 2 }}
@@ -40,7 +41,7 @@ export const Content: React.FC<ContentProps> = ({}) => {
       </GridItem>
       <GridItem
         colSpan={1}
-        rowSpan={3}
+        rowSpan={1}
         d={["none", "none", "none", "flex"]}
         w="full"
       >
