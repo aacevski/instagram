@@ -11,6 +11,7 @@ export const OneStory: React.FC<OneStoryProps> = ({}) => {
         rounded="full"
         h={["40px", "45px", "50px", "55px", "60px"]}
         border="2px solid white"
+        cursor="pointer"
       />
     </Box>
   );

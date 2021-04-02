@@ -27,21 +27,21 @@ export const PostInfo: React.FC<PostInfoProps> = ({}) => {
           w="full"
           _last={{ mx: 0 }}
         >
-          <Icon as={AiOutlineHeart} w={6} h={6} mr={1} />
-          <Icon as={AiOutlineMessage} w={6} h={6} mr={1} />
-          <Icon as={BiNavigation} w={6} h={6} mr={1} />
-          <Flex w="full" justifyContent="flex-end" bg="white">
-            <Icon as={BsBookmark} w={6} h={6} mr={1} />
+          <Icon as={AiOutlineHeart} w={6} h={6} mr={1} cursor="pointer" />
+          <Icon as={AiOutlineMessage} w={6} h={6} mr={1} cursor="pointer" />
+          <Icon as={BiNavigation} w={6} h={6} mr={1} cursor="pointer" />
+          <Flex w="full" justifyContent="flex-end" bg="white" cursor="pointer">
+            <Icon as={BsBookmark} w={6} h={6} mr={1} cursor="pointer" />
           </Flex>
         </HStack>
         <Flex w="full" mt={4}>
-          <Text fontSize="sm" fontWeight="bold">
+          <Text fontSize="sm" fontWeight="bold" cursor="pointer">
             18 likes
           </Text>
         </Flex>
         <Flex w="full" alignItems="center">
           <Text fontSize="sm" mt={-2} fontWeight="bold">
-            aacevski{" "}
+            <span style={{ cursor: "pointer" }}>aacevski</span>{" "}
             <span style={{ fontWeight: "normal" }}>
               😍 This is probably the best plated sushi I've ever seen.
             </span>
@@ -56,7 +56,7 @@ export const PostInfo: React.FC<PostInfoProps> = ({}) => {
           <InputGroup>
             <InputLeftElement
               pointerEvents="none"
-              children={<Icon as={BiSmile} w={6} h={6} />}
+              children={<Icon as={BiSmile} cursor="pointer" w={6} h={6} />}
             />
             <Input
               bg="transparent"

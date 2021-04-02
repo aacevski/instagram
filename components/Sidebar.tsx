@@ -13,7 +13,7 @@ export const Sidebar: React.FC<SidebarProps> = ({}) => {
           <Text fontSize="sm" fontWeight="bold" textColor="#718096">
             Suggestions for you
           </Text>
-          <Text fontSize="sm" fontWeight="bold">
+          <Text fontSize="sm" fontWeight="bold" cursor="pointer">
             See All
           </Text>
         </Flex>
