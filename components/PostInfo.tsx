@@ -55,7 +55,6 @@ export const PostInfo: React.FC<PostInfoProps> = ({}) => {
         <Flex w="full" borderTop="1px solid #DBDBDB" mt={2} py={2}>
           <InputGroup>
             <InputLeftElement
-              pointerEvents="none"
               children={<Icon as={BiSmile} cursor="pointer" w={6} h={6} />}
             />
             <Input

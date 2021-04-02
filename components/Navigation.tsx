@@ -1,12 +1,21 @@
 import React from "react";
-import { Box, Flex, Image, Input, Link, Icon } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Image,
+  Input,
+  Link,
+  Icon,
+  InputLeftElement,
+  InputGroup,
+} from "@chakra-ui/react";
 import { BsHouseDoor } from "react-icons/bs";
 import {
   AiOutlineMessage,
   AiOutlineHeart,
   AiOutlineCamera,
 } from "react-icons/ai";
-import { BiNavigation } from "react-icons/bi";
+import { BiNavigation, BiSearch } from "react-icons/bi";
 
 interface NavigationProps {}
 
@@ -28,14 +37,21 @@ export const Navigation: React.FC<NavigationProps> = ({}) => {
           <Link href="./">
             <Image src="https://svgshare.com/i/VEq.svg" h="10" />
           </Link>
-          <Input
-            w="20rem"
-            bg="#FAFAFA"
-            border="1px solid #DBDBDB"
-            placeholder="🔍  Search"
+          <InputGroup
             display={["none", "none", "flex"]}
-          />
-
+            w={{ base: "15rem", xl: "25rem" }}
+          >
+            <InputLeftElement
+              children={<Icon as={BiSearch} w={5} h={5} color="gray.400" />}
+            />
+            <Input
+              w="full"
+              bg="#FAFAFA"
+              border="1px solid #DBDBDB"
+              placeholder="Search"
+              display={["none", "none", "flex"]}
+            />
+          </InputGroup>
           <Flex alignItems="center" justifyContent="flex-end">
             <Icon
               as={BsHouseDoor}
